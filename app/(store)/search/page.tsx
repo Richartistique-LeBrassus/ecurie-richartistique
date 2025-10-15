@@ -4,8 +4,6 @@ import { searchProductsByName } from "@/sanity/lib/products/searchProductsByName
 import Image from "next/image";
 import type { Metadata } from "next";
 import type { ProductType } from "@/sanity.types";
-import FadeInSection from "@/components/ui/FadeInSection";
-
 interface SearchParams {
   query?: string;
 }

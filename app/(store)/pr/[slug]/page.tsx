@@ -9,7 +9,6 @@ import Head from 'next/head';
 import type { Metadata } from 'next';
 import ProductImageWithLightbox from '@/components/ui/ProductImageWithLightbox';
 import DelayedPage from '@/components/ui/DelayedPage';
-import { motion } from "framer-motion";
 import FadeInSection from '@/components/ui/FadeInSection';
 
 interface ImageType {

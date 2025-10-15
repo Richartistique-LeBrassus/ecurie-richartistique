@@ -4,7 +4,6 @@ import { ProductType } from "@/sanity.types";
 import { AnimatePresence, motion } from "framer-motion";
 import ProductThumb from "./ProductThumb";
 import { useRouter } from "next/navigation";
-import FadeInSection from "./ui/FadeInSection";
 
 function ProductGrid({ products }: { products: ProductType[] }) {
   const router = useRouter();
