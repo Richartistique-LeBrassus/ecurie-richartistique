@@ -6,7 +6,6 @@ export default function AboutSection() {
     <section className="w-full bg-white py-20 px-4 md:px-16 text-black ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 
       gap-12 items-center uppercase">
-        {/* Text Side */}
         <div className="p-5 lg:w-[85%]">
           <h2 className="text-base md:text-lg tracking-tight mb-6 font-bold">
             Meticulously crafted Wonder

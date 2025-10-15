@@ -21,7 +21,7 @@ export default function TheCraft() {
           ease: "power2.out",
           scrollTrigger: {
             trigger: headingRef.current,
-            start: "top 80%", // When heading is near viewport
+            start: "top 80%",
             toggleActions: "play none none reverse",
           },
         }
@@ -35,7 +35,6 @@ export default function TheCraft() {
         className="max-w-6xl mx-auto px-8 sm:px-10 md:px-12 
         py-20 grid md:grid-cols-2 gap-12 md:gap-20 lg:gap-24 items-center"
       >
-        {/* Title */}
         <h2 
           ref={headingRef}
           className="
@@ -45,7 +44,6 @@ export default function TheCraft() {
         >
           <span className="text-neutral-400 underline underline-offset-8"> Fabergé </span> <span className="text-cyan-900">Precision</span>
         </h2>
-        {/* Subtext */}
         <p className="text-sm text-black leading-relaxed uppercase">
           All of our scale models rely upon accuracy created by the scale-model artist&apos;s eye 
           and hand
@@ -59,15 +57,15 @@ export default function TheCraft() {
         <Image
           src="/images/porsche/917-blueprint.jpg"
           alt="Craft process 1"
-          width={1200}   // Set the width according to your design needs
-          height={854}  // Set the height according to your design needs
+          width={1200}   
+          height={854}  
           className="w-full h-full object-cover grayscale rounded-2xl"
         />
         <Image
           src="/images/ysl3.jpg"
           alt="Craft process 2"
-          width={1280}   // Set the width according to your design needs
-          height={849}  // Set the height according to your design needs
+          width={1280}   
+          height={849}  
           className="w-full h-full object-cover grayscale rounded-2xl"
         />
       </div>
@@ -78,8 +76,6 @@ export default function TheCraft() {
         <Image
           src="/images/p721.webp"
           alt="Craft process 2"
-          //width={1200}  
-          //height={720}
           width={2000}  
           height={1333}  
           className="absolute inset-0 w-full h-full object-cover grayscale"

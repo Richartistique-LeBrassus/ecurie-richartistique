@@ -20,7 +20,6 @@ const ChevronRight = dynamic(
 const NavDrawer = ({ isOpen, onClose }: NavDrawerProps) => {
   const router = useRouter();
 
-  // ✅ Luxury-grade scroll lock (same as FloatingNav)
   useEffect(() => {
     const body = document.body;
     if (isOpen) {

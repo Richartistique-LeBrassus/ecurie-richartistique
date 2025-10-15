@@ -26,7 +26,6 @@ export const FloatingNav = () => {
     state.items.reduce((total, item) => total + item.quantity, 0)
   );
 
-  // detect scroll direction
   useEffect(() => {
     let lastScrollY = window.scrollY;
 

@@ -1,6 +1,7 @@
 export const videos = [
   {
     src: '/videos/gulf-bg.mp4',
+    ariaLabel: 'View Product details for Porsche 917',
     genre: '1:8 Scale',
     title: 'Gulf Porsche 917K',
     titleColour: [
@@ -21,6 +22,7 @@ export const videos = [
   },
   {
     src: '/videos/917-martini.mp4',
+    ariaLabel: 'View Product details for Porsche 917 Martini',
     genre: 'Pre-Order Available',
     title: 'Martini Porsche 917K',
     titleColour: [
@@ -40,6 +42,7 @@ export const videos = [
   },
   {
     src: '/videos/lotus.mp4',
+    ariaLabel: 'Lotus Coming soon, details currently unavailable',
     genre: 'Coming Soon',
     title: "Emerson Fittipaldi's Lotus",
     titleColour: [
@@ -111,64 +114,6 @@ export const productCategories = [
     alt: "n/a",
   },
 ];
-
-{/*export const lookbookModels = [
-  {
-    title: "Gulf Porsche",
-    description: "Over 1,000 parts. No glue. Built by hand.",
-    imageUrl: "/images/chrome-1.webp",
-    cta: "See The Craft",
-  },
-  {
-    title: "Gulf Porsche",
-    description: "Over 1,000 parts. No glue. Built by hand.",
-    imageUrl: "/images/fahrer.webp",
-    cta: "See The Craft",
-  },
-  {
-    title: "Gulf Porsche",
-    description: "Over 1,000 parts. No glue. Built by hand.",
-    imageUrl: "/images/motor.webp",
-    cta: "See The Craft",
-  },
-  {
-    title: "Martini Porsche 917 LH",
-    description: "The legend of analog speed, reborn in 1:8 scale.",
-    imageUrl: "/images/chrome-2.webp",
-    cta: "Discover More",
-  },
-  {
-    title: "Streamliner",
-    description: "Italian obsession meets mechanical purity.",
-    imageUrl: "/images/roger.jpg",
-    cta: "Explore Build",
-  },
-  {
-    title: "Ferrari 330 P4",
-    description: "Unapologetic performance in every tiny screw.",
-    imageUrl: "/images/blau-hinter.webp",
-    cta: "View Details",
-  },
-  {
-    title: "Gulf Porsche",
-    description: "Over 1,000 parts. No glue. Built by hand.",
-    //imageUrl: "/images/chrome-3.webp",
-    imageUrl: "/images/returns4.jpg",
-    cta: "See The Craft",
-  },
-  {
-    title: "Gulf Porsche",
-    description: "Over 1,000 parts. No glue. Built by hand.",
-    imageUrl: "/images/beifahrer.webp",    
-    cta: "See The Craft",
-  },
-  {
-    title: "Gulf Porsche",
-    description: "Over 1,000 parts. No glue. Built by hand.",
-    imageUrl: "/images/seat.webp",
-    cta: "See The Craft",
-  },
-];*/}
 
 export const lookbookModels = [
   {

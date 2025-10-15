@@ -15,7 +15,6 @@ interface SearchResult {
   name: string;
 }
 
-// Example local dataset — replace with your full product list
 const localData: SearchResult[] = [
   { objectID: "1", name: "Porsche 911" },
   { objectID: "2", name: "Ferrari F8" },
@@ -27,7 +26,6 @@ const SearchDrawer: React.FC<SearchDrawerProps> = ({ isOpen, onClose, children }
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
 
-  // ✅ Luxury-grade scroll lock (same behavior as NavDrawer & FloatingNav)
   useEffect(() => {
     const body = document.body;
     if (isOpen) {
@@ -53,7 +51,6 @@ const SearchDrawer: React.FC<SearchDrawerProps> = ({ isOpen, onClose, children }
     }
   }, [isOpen]);
 
-  // handleSearch
   const handleSearch = useCallback(
     (q: string) => {
       debounce(() => {
@@ -108,7 +105,7 @@ const SearchDrawer: React.FC<SearchDrawerProps> = ({ isOpen, onClose, children }
           <X size={24} />
         </button>
 
-        {children} {/* exactly where your content was */}
+        {children} 
 
         <Form action="/search">
           <input

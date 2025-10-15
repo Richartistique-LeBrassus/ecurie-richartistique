@@ -11,8 +11,8 @@ const CtaSection = () => {
           <Image
             src="/images/sign-up.jpg"
             alt="Studio elegance"
-            width={1200}   // Set the width (you can adjust this based on your layout)
-            height={800}   // Set the height (you can adjust this based on your layout)
+            width={1200}   
+            height={800}   
             className="w-full h-full object-cover object-right-top contrast-125 brightness-90"
           />
         </div>

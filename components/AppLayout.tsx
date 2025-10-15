@@ -43,7 +43,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         {children}
       </div>
 
-      {/*<Footer />*/}
       <footer id="sticky-inner" className="min-h-fit bottom-0 w-full z-0 bg-neutral-50">
         <Footer />
       </footer>      

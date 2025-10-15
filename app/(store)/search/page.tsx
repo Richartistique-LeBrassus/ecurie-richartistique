@@ -1,4 +1,3 @@
-// File: app/(store)/search/page.tsx
 import ProductGrid from "@/components/ProductGrid";
 import { searchProductsByName } from "@/sanity/lib/products/searchProductsByName";
 import Image from "next/image";
@@ -9,10 +8,10 @@ interface SearchParams {
 }
 
 interface PageProps {
-  searchParams?: Promise<SearchParams>; // Required by Next.js 15
+  searchParams?: Promise<SearchParams>; 
 }
 
-// Generate page metadata dynamically
+
 export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
   const resolvedParams = searchParams ? await searchParams : {};
   const query = resolvedParams?.query ?? "";
@@ -33,7 +32,6 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
   };
 }
 
-// Main page component
 export default async function SearchPage({ searchParams }: PageProps) {
   const resolvedParams = searchParams ? await searchParams : {};
   const query = resolvedParams?.query ?? "";

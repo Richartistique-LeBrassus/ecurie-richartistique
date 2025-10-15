@@ -9,8 +9,6 @@ interface Video {
   genre: string;
   title: string;
   titleColour: string[];
-  subtitle: string;
-  link: string;
   ariaLabel: string;
   url: string;  
 }
@@ -29,7 +27,6 @@ const VideoSlideshow: React.FC<VideoSlideshowProps> = ({ videos, interval = 5000
 
   const videoList = Array.isArray(videos) ? videos : [videos];
 
-  // 🔹 Auto play/pause based on viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -44,7 +41,7 @@ const VideoSlideshow: React.FC<VideoSlideshowProps> = ({ videos, interval = 5000
           }
         });
       },
-      { threshold: 0.5 } // 50% of video must be visible
+      { threshold: 0.5 }
     );
 
     videoRefs.current.forEach((video) => {
@@ -56,7 +53,6 @@ const VideoSlideshow: React.FC<VideoSlideshowProps> = ({ videos, interval = 5000
     };
   }, []);
 
-  // 🔹 First video auto plays by default
   useEffect(() => {
     const firstVideo = videoRefs.current[0];
     if (firstVideo) {
@@ -64,7 +60,6 @@ const VideoSlideshow: React.FC<VideoSlideshowProps> = ({ videos, interval = 5000
     }
   }, []);
 
-  // 🔹 Progress handling (your original logic)
   useEffect(() => {
     intervalRef.current = window.setInterval(() => {
       setProgress((prev) => prev + 100 / (interval / 100));
@@ -109,9 +104,7 @@ const VideoSlideshow: React.FC<VideoSlideshowProps> = ({ videos, interval = 5000
                 ref={(el) => {
                   if (el) videoRefs.current[index] = el;
                 }}
-                //autoPlay={index === 0} // only first one plays instantly
                 src={video.src}
-                aria-label={video.ariaLabel}
                 muted
                 loop
                 playsInline
@@ -134,7 +127,6 @@ const VideoSlideshow: React.FC<VideoSlideshowProps> = ({ videos, interval = 5000
         );
       })}
 
-      {/* Overlay text */}
       <div className="absolute inset-0 flex flex-col justify-end items-center bottom-7 pointer-events-none z-20">
         {videoList.map((video, index) => (
           <div

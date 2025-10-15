@@ -31,8 +31,8 @@ const ProductCategory = ({ name, type, src, alt }: (typeof productCategories)[0]
           <Image
             src={src}
             alt={alt}
-            width={280}  // Set the width (matches w-[280px])
-            height={335} // Set the height (matches h-[335px])
+            width={280}  
+            height={335} 
             loading="lazy"
             className="w-[280px] h-[335px] lg:h-[400px] lg:w-[full] rounded-full
             xl:h-[450px] xl:w-[315px] 2xl:h-[550px] 2xl:w-[370px]

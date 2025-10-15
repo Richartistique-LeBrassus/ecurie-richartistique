@@ -29,7 +29,7 @@ export default function FeaturedMasterpieces() {
           ease: "power2.out",
           scrollTrigger: {
             trigger: headingRef.current,
-            start: "top 80%", // When heading is near viewport
+            start: "top 80%", 
             toggleActions: "play none none reverse",
           },
         }
@@ -57,15 +57,14 @@ export default function FeaturedMasterpieces() {
     }
   }, []);
 
-  // replace your variants with this
 const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 20 }, // obvious start so animation is visible
+  hidden: { opacity: 0, y: 20 }, 
   visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.12,    // small stagger
-      duration: 0.8,      // snappy but smooth
+      delay: i * 0.12,    
+      duration: 0.8,    
       ease: "easeOut" as const,
     },
   }),
@@ -227,7 +226,7 @@ const cardVariants: Variants = {
                                 animate={{
                                   opacity: isActive ? 1 : 0,
                                   y: isActive ? 0 : 12,
-                                  scale: isActive ? 1 : 1.25, // counteracts parent scale (1 / 0.8 = 1.25)
+                                  scale: isActive ? 1 : 1.25, 
                                 }}
                                 transition={{ duration: 0.45, ease: [0.33, 1, 0.68, 1] }}
                                 style={{ transformOrigin: "center" }}
