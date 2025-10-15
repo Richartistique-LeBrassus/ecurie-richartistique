@@ -52,7 +52,6 @@ export default function Home() {
         <CinematicHero />       
         <FeaturedMasterpieces />
         <RetroCatalogue />
-        {/* <CtaSection /> */}
       </div>
     </div>
   );

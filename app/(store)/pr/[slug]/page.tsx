@@ -9,6 +9,8 @@ import Head from 'next/head';
 import type { Metadata } from 'next';
 import ProductImageWithLightbox from '@/components/ui/ProductImageWithLightbox';
 import DelayedPage from '@/components/ui/DelayedPage';
+import { motion } from "framer-motion";
+import FadeInSection from '@/components/ui/FadeInSection';
 
 interface ImageType {
   src: string;
@@ -106,7 +108,10 @@ export default async function ProductPage({
 
             <div className="relative grid grid-cols-1 gap-36 h-fit min-h-[800px] w-full max-w-3xl mx-auto mt-12">
               <div className="relative w-full h-[400px] lg:h-fit px-5 py-6 sm:px-12">
-                <div className="flex flex-col justify-between gap-7 w-full h-[95%] uppercase text-center">
+                <FadeInSection>
+                <div                   
+                  className="flex flex-col justify-between gap-7 w-full h-[95%] uppercase text-center"
+                >
                   <h1 className="font-extrabold text-[27px] sm:text-3xl max-w-lg mx-auto">
                     {product.name}
                   </h1>
@@ -135,8 +140,10 @@ export default async function ProductPage({
                     </p>
                   </div>
                 </div>
+                </FadeInSection>
               </div>
 
+              <FadeInSection>
               <div className="relative w-full h-[55vw] max-h-[176px] max-w-[400px] 
                 mx-auto md:max-h-[190px] md:max-w-[450px] lg:max-h-[210px] lg:max-w-[480px]
                 mt-24 sm:mt-0"
@@ -151,8 +158,10 @@ export default async function ProductPage({
                   />
                 )}
               </div>
+              </FadeInSection>
             </div>
 
+            <FadeInSection>
             <div className="py-12 md:py-20 xl:py-28 2xl:py-36 grid grid-cols-2 gap-1 sm:inline-flex sm:justify-center w-full lg:gap-5 mx-auto">
               <div className="relative w-full h-[85vw] sm:h-auto sm:w-[45vh] md:w-[70vh]">
                 {product.images?.[2] && (
@@ -176,10 +185,12 @@ export default async function ProductPage({
                 />
               </div>
             </div>
+            </FadeInSection>
 
+            <FadeInSection>
             <div className="py-12 md:py-20 xl:px-8 2xl:p-16 xl:py-28 2xl:py-36 grid grid-cols-3 gap-1
               lg:gap-5 w-full"
-            >
+            >              
               {[fourthImage, fifthImage, sixthImage].map((imgSrc, i) => (
                 <div
                   key={i}
@@ -194,10 +205,12 @@ export default async function ProductPage({
                       loading="lazy"
                     />
                   )}
-                </div>
-              ))}
+                </div>                
+              ))}              
             </div>
+            </FadeInSection>
 
+            <FadeInSection>
             <div className="mt-12 md:mt-20 xl:mt-28 2xl:mt-36 
             relative w-full h-[70vw] sm:h-[47vw] md:h-[43vw] lg:h-[40vw] xl:h-[34vw] mx-auto">
               {product.images?.[6] && (
@@ -212,6 +225,7 @@ export default async function ProductPage({
                 />
               )}
             </div>
+            </FadeInSection>
           </div>
         </div>
       </>

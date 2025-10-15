@@ -4,6 +4,7 @@ import { searchProductsByName } from "@/sanity/lib/products/searchProductsByName
 import Image from "next/image";
 import type { Metadata } from "next";
 import type { ProductType } from "@/sanity.types";
+import FadeInSection from "@/components/ui/FadeInSection";
 
 interface SearchParams {
   query?: string;
@@ -59,7 +60,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
   }
 
   return (
-    <div className="flex flex-col items-center justify-top min-h-screen pt-24">
+    <div className="flex flex-col items-center justify-top min-h-screen pt-24 w-full">
       <div className="w-full">
         <div className="relative w-full h-[60vh] sm:h-[50vh]">
           <Image

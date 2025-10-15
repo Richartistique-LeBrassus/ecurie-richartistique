@@ -108,37 +108,22 @@ const cardVariants: Variants = {
         </div>
         <AnimatePresence mode="wait">
           {activeTab === "boutique" ? (
-            <div 
+            <motion.div
               ref={scrollRef}
-              key="lookbook"              
-              className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              initial={false}        
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            >
               {lookbookModels.map((model, index) => (
-                /*<motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2, margin: "0px 0px -10% 0px" }}                                    
-                  variants={cardVariants}
-                  key={index}
-                  className="group relative overflow-hidden rounded-3xl  
-                  transition-all duration-300 hover:cursor-pointer 
-                  h-[400px]"
-                >
-                  <Image
-                    src={model.imageUrl}   
-                    alt={model.title}      
-                    className="w-full h-[400px] object-cover"          
-                    fill  
-                    loading="lazy"               
-                  />                             
-                </motion.div>*/
-                // only change: add custom={index}
                 <motion.div
+                  key={index}
+                  custom={index}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.2, margin: "0px 0px -10% 0px" }}
+                  viewport={{ once: true, amount: 0.2 }}
                   variants={cardVariants}
-                  custom={index}           // <- add this
-                  key={index}
                   className="group relative overflow-hidden 
                   rounded-3xl transition-all duration-300 
                   hover:cursor-pointer h-[400px]"
@@ -148,11 +133,11 @@ const cardVariants: Variants = {
                     alt={model.title}
                     className="w-full h-[400px] object-cover"
                     fill
-                    loading="lazy"
+                    priority
                   />
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
           ) : (
             <AnimatePresence mode="wait">
               {activeTab === "lookbook" && (
