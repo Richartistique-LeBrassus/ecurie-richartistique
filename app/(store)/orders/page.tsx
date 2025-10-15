@@ -1,8 +1,8 @@
 import { formatCurrency } from "@/lib/formatCurrency";
 import { imageUrl } from "@/lib/imageUrl";
 import { getMyOrders } from "@/sanity/lib/orders/getMyOrders";
-import { markOrderViewed } from "@/sanity/lib/orders/markOrderViewed"; // ✅ import
-import { auth } from "@clerk/nextjs/server"; // ✅ server-side auth
+import { markOrderViewed } from "@/sanity/lib/orders/markOrderViewed"; 
+import { auth } from "@clerk/nextjs/server"; 
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import { Order } from "@/sanity.types";
@@ -15,10 +15,9 @@ export default async function Orders() {
 
   const orders: Order[] = await getMyOrders(userId);
 
-  // ✅ Mark all fetched orders as viewed
   await Promise.all(orders.map(order => markOrderViewed(order._id)));
 
-  const recentOrders = orders.slice(0, 3); // show 3 most recent (adjust as needed)
+  const recentOrders = orders.slice(0, 3); 
 
   return (
     <DelayedPage>

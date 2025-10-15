@@ -39,12 +39,12 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, []);
+  //useEffect(() => {
+  //  document.body.style.overflow = 'hidden';
+  //  return () => {
+  //    document.body.style.overflow = '';
+  //  };
+  //}, []);
 
   return (
     <div ref={containerRef} className="">
