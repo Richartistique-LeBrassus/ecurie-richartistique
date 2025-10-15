@@ -38,7 +38,7 @@ type SectionProps = {
 const Section1 = ({ scrollYProgress }: SectionProps) => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   return (
-    <motion.div style={{ scale }} className="sticky top-0 w-full h-[95vh]">
+    <motion.div style={{ scale }} className="sticky top-0 w-full h-[90vh] sm:h-[95vh]">
       <VideoSlideshow videos={videos[0]} interval={16000}/>  
     </motion.div >
   );
@@ -47,7 +47,7 @@ const Section1 = ({ scrollYProgress }: SectionProps) => {
 const Section2 = ({ scrollYProgress }: SectionProps) => {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.7, 0.9, 0.7]);
   return (
-    <motion.div style={{ scale }} className="relative w-full h-[95vh]">
+    <motion.div style={{ scale }} className="relative w-full h-[90vh] sm:h-[95vh]">
       <VideoSlideshow videos={videos[1]} interval={16000}/>  
     </motion.div >
   );
@@ -57,7 +57,7 @@ const Section2 = ({ scrollYProgress }: SectionProps) => {
 const Section3 = ({ scrollYProgress }: SectionProps) => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
-    <motion.div style={{ scale }} className="relative w-full h-[95vh]">
+    <motion.div style={{ scale }} className="relative w-full h-[90vh] sm:h-[95vh]">
       <VideoSlideshow videos={videos[2]} interval={16000}/>  
     </motion.div >
   );
