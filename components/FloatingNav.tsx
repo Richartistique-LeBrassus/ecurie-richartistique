@@ -48,7 +48,7 @@ export const FloatingNav = () => {
       animate={{ y: scrollDirection === "down" ? -100 : 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
       className={`w-full fixed z-20 px-4  
-      ${isSearchOpen || isNavOpen ? "py-0 lg:py-0" : "py-[6px] lg:py-3"}  
+      ${isSearchOpen || isNavOpen ? "py-0 lg:py-0" : "py-[4px] sm:py-[6px] lg:py-3"}  
       md:px-8
       ${isScrolled ? "bg-neutral-50" : "bg-neutral-50"}`}
     >
@@ -118,7 +118,7 @@ export const FloatingNav = () => {
                 aria-label="Home"
               >
                 <div className="ecurie">
-                  <h2 className="text-[17px]">
+                  <h2 className="text-[15px] sm:text-[17px]">
                     É
                   </h2>
                 </div>
