@@ -4,8 +4,8 @@ export const videos = [
     genre: '1:8 Scale',
     title: 'Gulf Porsche 917K',
     titleColour: [
-      "rgb(255, 102, 0)",   // Gulf orange
-      "rgb(0, 160, 176)",   // Gulf blue
+      "rgb(255, 102, 0)",   
+      "rgb(0, 160, 176)",   
       "rgb(255, 102, 0)",
       "rgb(0, 160, 176)",
       "rgb(255, 102, 0)",
@@ -17,19 +17,16 @@ export const videos = [
       "rgb(0, 160, 176)",
       "rgb(255, 102, 0)",
     ],
-    subtitle: '> DISCOVER THE FERRARI LINE UP',
-    link: 'https://www.ferrari.com/performance',
-    ariaLabel: 'Ferrari Sports Cars',
-    url: "http://localhost:3000/pr/porsche-917k-gulf-edition",
+    url: "/pr/porsche-917k-gulf-edition",
   },
   {
     src: '/videos/917-martini.mp4',
     genre: 'Pre-Order Available',
     title: 'Martini Porsche 917K',
     titleColour: [
-      "rgb(0, 43, 92)",     // dark blue
-      "rgb(0, 143, 213)",   // light blue
-      "rgb(200, 16, 46)",   // red
+      "rgb(0, 43, 92)",     
+      "rgb(0, 143, 213)",   
+      "rgb(200, 16, 46)",   
       "rgb(0, 43, 92)",
       "rgb(0, 143, 213)",
       "rgb(200, 16, 46)",
@@ -39,10 +36,7 @@ export const videos = [
       "rgb(250, 250, 250)",
       "rgb(200, 16, 46)",
     ],
-    subtitle: '> DISCOVER FERRARI LUXURY CLOTHING',
-    link: 'https://www.ferrari.com',
-    ariaLabel: 'Latest Ferrari Line',
-    url: "http://localhost:3000/pr/porsche-917k-1971-le-mans-winning-martini-edition",
+    url: "/pr/porsche-917k-1971-le-mans-winning-martini-edition",
   },
   {
     src: '/videos/lotus.mp4',
@@ -60,10 +54,7 @@ export const videos = [
       "rgb(240, 200, 80)",   
       "rgb(255, 215, 0)",  
     ],
-    subtitle: '> DISCOVER FERRARI LUXURY CLOTHING',
-    link: 'https://www.ferrari.com',
-    ariaLabel: 'Latest Ferrari Line',
-    url: "http://localhost:3000",
+    url: "/",
   }
 ];
 
@@ -71,22 +62,22 @@ export const featuredModels = [
   {
     title: "'Steve McQueen's' Porsche 917",
     imageUrl: "/images/trial.jpg",
-    url: "http://localhost:3000/pr/porsche-917k-gulf-edition",
+    url: "/pr/porsche-917k-gulf-edition",
   },
   {
     title: "Legacy Ferraris",
     imageUrl: "/images/fiamma.avif",
-    url: "http://localhost:3000/ferrari",
+    url: "/ferrari",
   },
   {
     title: "The Timeless Porsche Speedster",
     imageUrl: "/images/couple.jpg",
-    url: "http://localhost:3000/pr/porsche-356-a-speedster-1955",
+    url: "/pr/porsche-356-a-speedster-1955",
   },
   {
     title: "Rosso Prima Donna",
     imageUrl: "/images/bardot.jpg",
-    url: "http://localhost:3000/ferrari",
+    url: "/ferrari",
   },
 ];
 
