@@ -78,6 +78,10 @@ const Footer = () => {
           <a href="#" aria-label="Tiktok"><TiktokLogo size={20} /></a>
         </div>
       </div>        
+
+      <p className="text-neutral-400 text-xs mt-10 uppercase">
+        Design and code © Richartistique Le Brassus. External media remain property of their respective creators.
+      </p>
     </footer>    
   );
 };

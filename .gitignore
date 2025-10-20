@@ -56,3 +56,4 @@ next-env.d.ts
 # Large archives
 project-archive.tgz
 project-archive.zip
+.vercel
